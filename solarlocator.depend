@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1693150677 source:/home/jfdoyle3/repository/languages/c/solarlocator/sun_api.c
+	<stdio.h>
+	<curl/curl.h>
+	"sun_api.h"
+
+1693149883 /home/jfdoyle3/repository/languages/c/solarlocator/sun_api.h
+
+1693151008 source:/home/jfdoyle3/repository/languages/c/solarlocator/main.c
+	<stdio.h>
+	<curl/curl.h>
+	"SunAPI.h"
+
+1693149883 /home/jfdoyle3/repository/languages/c/solarlocator/SunAPI.h
+
