@@ -39,7 +39,6 @@ Simple code:
  */
 #include <stdio.h>
 #include <curl/curl.h>
-#include "SunAPI.h"
 
 int SunInfo(void)
 {
@@ -63,6 +62,20 @@ int SunInfo(void)
     curl_easy_cleanup(curl);
 
   }
+  return 0;
+}
+
+/*
+   Main
+  ------
+*/
+
+int main(void)
+{
+
+  SunInfo();
+  // parse SunInfo() json response
+
   return 0;
 }
 
