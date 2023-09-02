@@ -13,3 +13,13 @@
 
 1693149883 /home/jfdoyle3/repository/languages/c/solarlocator/SunAPI.h
 
+1693390943 source:/home/jfdoyle3/repos/c/solarlocator/main.c
+	<stdio.h>
+	"SunAPI.h"
+
+1693149883 /home/jfdoyle3/repos/c/solarlocator/SunAPI.h
+
+1693391831 source:/home/jfdoyle3/repos/c/solarlocator/solarmonolith.c
+	<stdio.h>
+	<curl/curl.h>
+

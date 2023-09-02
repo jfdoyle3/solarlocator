@@ -45,6 +45,7 @@ int SunInfo(void)
 {
   CURL *curl;
   CURLcode res;
+  char *response_string;
 
   curl = curl_easy_init();
   if(curl) {
@@ -54,6 +55,13 @@ int SunInfo(void)
 
     /* Perform the request, res will get the return code */
     res = curl_easy_perform(curl);
+    if (res == CURLE_OK) {
+      // Get the response string
+      response_string = curl_easy_getinfo(curl, CURLINFO_RESPONSE_STRING);
+
+      // Print the response string
+      printf("This is a string:   %s\n", response_string);
+    }
     /* Check for errors */
     if(res != CURLE_OK)
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
