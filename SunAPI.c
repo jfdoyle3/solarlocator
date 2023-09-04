@@ -39,30 +39,20 @@ Simple code:
  */
 #include <stdio.h>
 #include <curl/curl.h>
-#include "SunAPI.h"
 
 int SunInfo(void)
 {
   CURL *curl;
   CURLcode res;
-  char *response_string;
-
 
   curl = curl_easy_init();
   if(curl) {
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.sunrisesunset.io/json?lat=41.87092932&lng=-71.42788283");
-
+    /* example.com is redirected, so we tell libcurl to follow redirection */
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 
     /* Perform the request, res will get the return code */
     res = curl_easy_perform(curl);
-    if (res == CURLE_OK) {
-      // Get the response string
-      response_string = curl_easy_getinfo(curl, CURLINFO_RESPONSE_STRING);
-
-      // Print the response string
-      printf("This is a string:   %s\n", response_string);
-    }
     /* Check for errors */
     if(res != CURLE_OK)
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
@@ -70,8 +60,6 @@ int SunInfo(void)
 
     /* always cleanup */
     curl_easy_cleanup(curl);
-
   }
   return 0;
 }
-

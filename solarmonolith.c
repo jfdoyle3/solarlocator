@@ -65,17 +65,3 @@ int SunInfo(void)
   return 0;
 }
 
-/*
-   Main
-  ------
-*/
-
-int main(void)
-{
-
-  SunInfo();
-  // parse SunInfo() json response
-
-  return 0;
-}
-

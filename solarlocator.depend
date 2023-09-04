@@ -6,9 +6,8 @@
 
 1693149883 /home/jfdoyle3/repository/languages/c/solarlocator/sun_api.h
 
-1693151008 source:/home/jfdoyle3/repository/languages/c/solarlocator/main.c
+1693390943 source:/home/jfdoyle3/repository/languages/c/solarlocator/main.c
 	<stdio.h>
-	<curl/curl.h>
 	"SunAPI.h"
 
 1693149883 /home/jfdoyle3/repository/languages/c/solarlocator/SunAPI.h
@@ -22,4 +21,13 @@
 1693391831 source:/home/jfdoyle3/repos/c/solarlocator/solarmonolith.c
 	<stdio.h>
 	<curl/curl.h>
+
+1693854655 source:/home/jfdoyle3/repository/languages/c/solarlocator/solarmonolith.c
+	<stdio.h>
+	<curl/curl.h>
+
+1693854609 source:/home/jfdoyle3/repository/languages/c/solarlocator/SunAPI.c
+	<stdio.h>
+	<curl/curl.h>
+	"SunAPI.h"
 
