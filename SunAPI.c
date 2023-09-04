@@ -47,10 +47,11 @@ int SunInfo(void)
   CURLcode res;
   char *response_string;
 
+
   curl = curl_easy_init();
   if(curl) {
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.sunrisesunset.io/json?lat=41.87092932&lng=-71.42788283");
-    /* example.com is redirected, so we tell libcurl to follow redirection */
+
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 
     /* Perform the request, res will get the return code */
