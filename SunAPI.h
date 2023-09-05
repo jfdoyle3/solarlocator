@@ -1,2 +1,3 @@
 
 int SunInfo();
+int SunInfoStr();
