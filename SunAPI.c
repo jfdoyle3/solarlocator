@@ -78,7 +78,7 @@ void SunInfoStr(void)
 
     // https://curl.se/libcurl/c/libcurl-tutorial.html
     // need to read this page more in the writefunction / writedata section
-    strcpy(results,res);
+    // strcpy(results,res);
 
     if(res != CURLE_OK)
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
