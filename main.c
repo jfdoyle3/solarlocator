@@ -2,7 +2,7 @@
 #include "SunAPI.h"
 
 
-int main(void)
+void main(void)
 {
 
   SunInfo();
@@ -10,6 +10,5 @@ int main(void)
   SunInfoStr();
   // parse SunInfo() json response
 
-  return 0;
 }
 
