@@ -71,7 +71,8 @@ void SunInfoStr(void)
   handle = curl_easy_init();
   if(handle) {
     curl_easy_setopt(handle, CURLOPT_URL, "https://api.sunrisesunset.io/json?lat=41.87092932&lng=-71.42788283");
-    curl_easy_setopt(handle, CURLOPT_FOLLOWLOCATION, 1L);
+    // curl_easy_setopt(handle, CURLOPT_FOLLOWLOCATION, 1L);
+    curl_easy_setopt(handle, CURLOPT_WRITEFUNCTION, write_data);
 
     res = curl_easy_perform(handle);
 
