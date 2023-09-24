@@ -89,6 +89,7 @@ void SunInfoStr(void)
 
 }
 
+// Write a function to recieve the output of the response and capture it into memory
 size_t write_data(void *buffer, size_t size, size_t nmemb, void *userp)
 {
 
