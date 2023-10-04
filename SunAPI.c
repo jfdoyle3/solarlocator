@@ -40,7 +40,7 @@ Simple code:
 #include <stdio.h>
 #include <curl/curl.h>
 
-size_t write_data(void *buffer, size_t size, size_t nmemb, void *userp);
+// size_t write_data(void *buffer, size_t size, size_t nmemb, void *userp);
 
 void SunInfo(void)
 {
@@ -63,7 +63,7 @@ void SunInfo(void)
   }
 
 }
-
+/*
 void SunInfoStr(void)
 {
   CURL *handle;
@@ -92,7 +92,8 @@ void SunInfoStr(void)
 }
 
 // Write a function to recieve the output of the response and capture it into memory
-size_t write_data(void *buffer, size_t size, size_t nmemb, void *userp)
-{
+//size_t write_data(void *buffer, size_t size, size_t nmemb, void *userp)
+//{
 
-}
+//}
+*/

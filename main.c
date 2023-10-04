@@ -2,7 +2,7 @@
 // #include "SunAPI.h"
 
 
-void main(void)
+int main(void)
 {
   /*
   SunInfo();
@@ -17,5 +17,7 @@ void main(void)
 
 
   printf("%d",*ptr);
+
+  return 0;
 }
 
