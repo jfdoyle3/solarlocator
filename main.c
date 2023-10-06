@@ -14,9 +14,6 @@ int main()
   // parse SunInfo() json response
   */
 
-  printf("Boo!!");
-
-
   return 0;
 }
 
